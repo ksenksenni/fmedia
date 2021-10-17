@@ -20,6 +20,11 @@ body {
     margin: 0 auto;
 }
 
+.btn:hover,
+.btn:active {
+    opacity: 0.7;
+}
+
 
 /* header */
 
