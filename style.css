@@ -57,6 +57,38 @@ body {
     margin-right: 82px;
 }
 
+.about__slider {
+    max-width: 612px;
+    /* max-height: 400px; */
+    height: auto;
+}
+
+.slider {
+    max-width: 100%;
+    margin: auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls-btn {
+    background-color: #ffffff;
+    border: none;
+    margin: 0;
+}
+
+.preview {
+    border: 1px solid #b1b1b1;
+    margin-right: 15px;
+}
+
+.preview:first-of-type {
+    margin-left: 15px;
+}
+
 .about__content-info {
     border-bottom: 1px solid #dcdcdc;
 }
