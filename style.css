@@ -63,8 +63,9 @@ body {
 }
 
 .about__slider {
+    display: flex;
+    flex-direction: column;
     max-width: 612px;
-    /* max-height: 400px; */
     height: auto;
 }
 
@@ -88,6 +89,10 @@ body {
 .preview {
     border: 1px solid #b1b1b1;
     margin-right: 15px;
+}
+
+.preview.glide__bullet--active {
+    border: 2px solid #923DA0;
 }
 
 .preview:first-of-type {

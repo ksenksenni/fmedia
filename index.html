@@ -29,12 +29,18 @@
                     </ul>
                 </div>
 
-                <div data-glide-el="controls" class="controls">
-                    <button data-glide-dir="<" class="controls-btn btn"><img src="img/previous.png" alt=""></button>
-                    <img src="img/slider-1.png" alt="" class="preview">
-                    <img src="img/slider-2.png" alt="" class="preview">
-                    <img src="img/slider-3.png" alt="" class="preview">
-                    <button data-glide-dir=">" class="controls-btn btn"><img src="img/next.png" alt=""></button>
+                <div class="controls">
+                    <div data-glide-el="controls[nav]">
+                        <button data-glide-dir="<" data-glide-el="controls[nav]" class="controls-btn btn"><img src="img/previous.png" alt=""></button>
+                    </div>
+                    <div class="slider__bullets glide__bullets" data-glide-el="controls[nav]">
+                        <img src="img/slider-1.png" alt="" class="preview" data-glide-dir="=0">
+                        <img src="img/slider-2.png" alt="" class="preview" data-glide-dir="=1">
+                        <img src="img/slider-3.png" alt="" class="preview" data-glide-dir="=2">
+                    </div>
+                    <div data-glide-el="controls[nav]">
+                        <button data-glide-dir=">" class="controls-btn btn"><img src="img/next.png" alt=""></button>
+                    </div>
                 </div>
             </div>
 
