@@ -1,17 +1,14 @@
 var minus = document.querySelector('.btn-minus');
-var plus = document.querySelector('.about__content-number-btns-input');
-var input = document.querySelector('.btn-plus');
+var plus = document.querySelector('.btn-plus');
+var input = document.querySelector('.about__content-number-btns-input');
 
-if (input.value > 0) {
-    plus.addEventListener('click', function() {
-        return input.value++;
-    })
+plus.addEventListener('click', function() {
+    input.value = Number(input.value) + 1;
 
-    minus.addEventListener('click', function() {
-        return input.value--;
-    })
-} else {
-    minus.addEventListener('click', function() {
-        return input.value = 0;
-    })
-}
+})
+
+minus.addEventListener('click', function() {
+    if (input.value > 0) {
+        input.value -= 1;
+    }
+})
