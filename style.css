@@ -684,9 +684,40 @@ body {
     background-color: #f4c4fc;
 }
 
+
+/* @media screen and (max-width: 1120px) {
+    .instruction__block {
+        flex-direction: column;
+        align-items: flex-end;
+        background-image: url(img/bg-bottom.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+    }
+} */
+
+@media screen and (max-width: 800px) {
+    .instruction__block {
+        flex-direction: column;
+        /* background-image: none; */
+    }
+}
+
 .instruction__block-image {
     max-width: 776px;
     max-height: 572px;
+}
+
+@media screen and (max-width: 1120px) {
+    .instruction__block-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 8000px) {
+    .instruction__block-image {
+        display: block;
+    }
 }
 
 .instruction__block-image-img {
@@ -695,9 +726,23 @@ body {
     margin-left: -24px;
 }
 
+@media screen and (max-width: 800px) {
+    .instruction__block-image-img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+    }
+}
+
 .instruction__description {
     padding-top: 56px;
     padding-bottom: 56px;
+}
+
+@media screen and (max-width: 1180px) {
+    .instruction__description {
+        padding-bottom: 14px;
+    }
 }
 
 .instruction__description-item {
@@ -705,10 +750,22 @@ body {
     align-items: center;
     margin-bottom: 60px;
     background-color: #ffffff;
-    /* max-width: 460px; */
     border-radius: 69px;
     padding-left: 105px;
     position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    .instruction__description-item {
+        border-radius: 0px;
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .instruction__description-item {
+        margin-left: 50px;
+    }
 }
 
 .instruction__description-item:last-child {
@@ -724,6 +781,12 @@ body {
     height: 125px;
     background-image: url(img/instruction-2.png);
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+    .instruction__description-item-text {
+        font-size: 12px;
+    }
 }
 
 .instruction__description-item:first-child:before {
@@ -748,7 +811,22 @@ body {
     margin-right: 15px;
 }
 
+@media screen and (max-width: 420px) {
+    .instruction__description-item-number {
+        font-size: 30px;
+        margin-left: -30px;
+        margin-right: 5px;
+    }
+}
+
 .instruction__description-item-text {
     max-width: 280px;
     padding-right: 38px;
+}
+
+@media screen and (max-width: 800px) {
+    .instruction__description-item-text {
+        font-size: 12px;
+        padding-right: 0;
+    }
 }
