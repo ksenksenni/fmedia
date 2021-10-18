@@ -23,15 +23,20 @@
             <div class="glide about__slider">
                 <div class="glide__track slider" data-glide-el="track">
                     <ul class="glide__slides">
-                        <li class="glide__slide slide-image-first"><img src="img/slide-1.png" alt="Первый слайд">
+                        <li class="glide__slide slide-image-first slide"><img src="img/slide-1.png" alt="Первый слайд">
                             <p class="caption-slide caption-first">быстрая установка</p>
                             <p class="caption-slide caption-second">сильная фиксация</p>
                         </li>
-                        <li class="glide__slide slide-image-second"><img src="img/slide-2.jpg" alt="Второй слайд">
+                        <li class="glide__slide slide-image-first slide-mobile"><img src="img/slide-1-mobile.png" alt="Первый слайд">
+                        </li>
+                        <li class="glide__slide slide-image-second slide"><img src="img/slide-2.jpg" alt="Второй слайд">
                             <p class="caption-slide caption-third">до</p>
                             <p class="caption-slide caption-fourth">после</p>
                         </li>
-                        <li class="glide__slide"><img src="img/slide-3.png" alt="Третий слайд"></li>
+                        <li class="glide__slide slide-image-second slide-mobile"><img src="img/slide-2-mobile.png" alt="Второй слайд">
+                        </li>
+                        <li class="glide__slide slide"><img src="img/slide-3.png" alt="Третий слайд"></li>
+                        <li class="glide__slide slide-mobile"><img src="img/slide-3-mobile.png" alt="Третий слайд"></li>
                     </ul>
                 </div>
 
@@ -68,7 +73,7 @@
                 </div>
 
                 <div class="about__content-price">
-                    <div>
+                    <div class="about__content-price-block">
                         <div class="about__content-price-discount">
                             <p class="about__content-price-discount-oldprice">52 €</p>
                             <p class="about__content-price-discount-percent">-5%</p>
@@ -111,9 +116,16 @@
                     </div>
                 </div>
 
+
                 <button class="about__content-btn btn">купить сейчас</button>
-            </div>
         </section>
+
+        <div class="mobile-content-info">
+            <p class="mobile-content-info-buy">купить сейчас</p>
+            <p class="mobile-content-info-price">49,00 €</p>
+            <p class="mobile-content-info-oldprice">98 €</p>
+        </div>
+        </div>
 
         <section class="instruction">
             <h2 class="instruction__title">Инструкция по установке <b>BrightSmile</b></h2>
