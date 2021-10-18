@@ -74,6 +74,47 @@ body {
     margin: auto;
 }
 
+.slide-image-first,
+.slide-image-second {
+    position: relative;
+}
+
+.caption-slide {
+    background-color: #923da0;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 339px;
+    text-align: center;
+}
+
+.caption-first {
+    position: absolute;
+    top: 230px;
+    left: 0px;
+}
+
+.caption-second {
+    position: absolute;
+    top: 295px;
+    left: 0px;
+}
+
+.caption-third {
+    position: absolute;
+    top: 259px;
+    left: 0px;
+}
+
+.caption-fourth {
+    position: absolute;
+    top: 259px;
+    right: 0px;
+}
+
 .controls {
     display: flex;
     justify-content: center;
